@@ -7,5 +7,29 @@
 </ion-header>
 
 <ion-content padding>
-  <user-status></user-status>
+  <ion-grid class="user-profile">
+    <ion-row class="user-profile__view">
+      <ion-col class="user-profile__view__icon">
+        <ion-img class="user-profile__view__icon_image" src="assets/imgs/logo.png"></ion-img>
+      </ion-col>
+        <ion-col class="user-profile__view__status">
+          <h2 class="user-profile__view__status_title">status</h2>
+          <table class="user-profile__view__status_table">
+            <tr>
+              <td>参加アンケート</td>
+              <td>:20</td>
+            </tr>
+            <tr>
+              <td>回答数</td>
+              <td>:10</td>
+            </tr>
+            <tr>
+              <td>未回答</td>
+              <td>:10</td>
+            </tr>
+          </table>
+          <h3 class="user-profile__view__status_response_rate">回答率: 50%</h3>
+        </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
